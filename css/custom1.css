@@ -1,0 +1,51 @@
+
+.collection-container{
+   background-color: #f3f3f3;
+   margin-top:0px;
+   padding-left: 2em;
+}
+
+.collection-title-divider {
+  border-color: #c3c3c3;
+  border-image: none;
+  border-style: none none solid;
+  border-width: medium medium 1px;
+  margin: 0.5em 3em 1em 1em;
+  opacity: 0.5;
+}
+
+.inline-spacer {
+  background-color: #f3f3f3;
+}
+
+#horizontal-container {
+  height: 200px;
+  width: 100%;
+  max-width: 800px;
+  background-color: gray;
+}
+
+.repeated-item {
+  display: inline-block;
+}
+
+
+
+
+
+/*Uncomment the follwoing lines to move facets to the left*/
+
+/*
+prm-search > md-content.md-primoExplore-theme .main {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.screen-gt-sm .sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+*/

@@ -1,0 +1,33 @@
+<div ng-cloak>
+    <div layout='row'>
+        <div class='inline-spacer' flex='10'><!--spacer--></div>
+
+
+
+        <div class='collection-container' layout='column' flex>
+          <div layout='row'>
+            <h2 class='section-title md-title light-text'>Images</h2>
+            <div class='collection-title-divider' flex></div>
+          </div>
+          <md-content layout='column'>
+            <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal="">
+                <div md-virtual-repeat="image in $ctrl.images" class="repeated-item" flex="">
+                  <md-card >
+                    <img class="md-media-sm" src="{{image.thumbnail}}">
+                    <md-card-content>
+                      <p>
+                       {{image.title}}
+                      </p>
+                    </md-card-content>
+                  </md-card>
+
+                </div>
+            </md-virtual-repeat-container>
+          </md-content>
+        </div>
+
+
+        <div flex='20'><!--spacer--></div>
+
+    </div>
+</div>
