@@ -19,10 +19,10 @@
 }
 
 #horizontal-container {
-  height: 200px;
+  height: 160px;
   width: 100%;
-  max-width: 800px;
-  background-color: gray;
+  /*max-width: 800px;*/
+  background-color: black;
 }
 
 .repeated-item {

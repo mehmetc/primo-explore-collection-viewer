@@ -1,33 +1,35 @@
 <div ng-cloak>
-    <div layout='row'>
+    <div layout='row' style='height:400px;'>
         <div class='inline-spacer' flex='10'><!--spacer--></div>
-
-
 
         <div class='collection-container' layout='column' flex>
           <div layout='row'>
             <h2 class='section-title md-title light-text'>Images</h2>
             <div class='collection-title-divider' flex></div>
           </div>
-          <md-content layout='column'>
+
+          <div md-whiteframe="3">
             <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal="">
-                <div md-virtual-repeat="image in $ctrl.images" class="repeated-item" flex="">
-                  <md-card >
-                    <img class="md-media-sm" src="{{image.thumbnail}}">
-                    <md-card-content>
-                      <p>
-                       {{image.title}}
-                      </p>
-                    </md-card-content>
-                  </md-card>
 
-                </div>
+              <md-card md-virtual-repeat="image in $ctrl.images" class='repeated-item'>
+                <md-card-title>
+                  <md-card-title-text style='margin-right:5px;'>
+                    <span class="md-headline">{{image.title}}</span>                    
+                  </md-card-title-text>
+                  <md-card-title-media>
+                    <div class="md-media-md">
+                      <img class="md-media-sm" src="{{image.thumbnail}}">
+                    </div>
+                  </md-card-title-media>
+                </md-card-title>
+              </md-card>
+
             </md-virtual-repeat-container>
-          </md-content>
+          </div>
         </div>
-
 
         <div flex='20'><!--spacer--></div>
 
     </div>
+    <div></div>
 </div>
